@@ -158,17 +158,17 @@ kube_encrypt_secret_data: false
 # DNS configuration.
 # Kubernetes cluster name, also will be used as DNS domain
 # cluster_name: cluster.local
-cluster_name: tinihub.com
+cluster_name: cluster.local
 # Subdomains of DNS domain to be resolved via /etc/resolv.conf for hostnet pods
 ndots: 2
 # dns_timeout: 2
 # dns_attempts: 2
 # Custom search domains to be added in addition to the default cluster search domains
 # searchdomains:
-   - svc.{{ cluster_name }}
-   - default.svc.{{ cluster_name }}
+#   - svc.{{ cluster_name }}
+#   - default.svc.{{ cluster_name }}
 # Remove default cluster search domains (``default.svc.{{ dns_domain }}, svc.{{ dns_domain }}``).
-remove_default_searchdomains: true
+# remove_default_searchdomains: true
 # Can be coredns, coredns_dual, manual or none
 dns_mode: coredns
 # Set manual server if using a custom cluster DNS server
